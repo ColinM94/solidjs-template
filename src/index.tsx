@@ -1,13 +1,13 @@
-import { render } from 'solid-js/web'
-import { Route, Router } from '@solidjs/router'
+import { render } from "solid-js/web";
+import { Route, Router } from "@solidjs/router";
 
-import { MainLayout } from './layouts'
-import { HomePage } from './pages'
-import './index.scss'
+import { MainLayout } from "./layouts";
+import { HomePage } from "./pages";
+import "./styles/index.scss";
 
-const root = document.getElementById('root')
+const root = document.getElementById("root");
 
-if (!root) throw 'Root not found!'
+if (!root) throw "Root not found!";
 
 render(
   () => (
@@ -16,4 +16,4 @@ render(
     </Router>
   ),
   root
-)
+);
