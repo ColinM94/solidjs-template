@@ -10,6 +10,10 @@
       "**/public": true
     },
     "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "always"
+    },
+    "eslint.validate": ["javascript", "typescript"],
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "liveServer.settings.port": 5501,
     "liveServer.settings.root": "/dist"
