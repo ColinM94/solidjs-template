@@ -3,7 +3,7 @@ import { Route, Router } from "@solidjs/router";
 
 import { MainLayout } from "./layouts";
 import { HomePage, NotFoundPage } from "./pages";
-import "./styles/index.scss";
+import "./styles/global.scss";
 
 const root = document.getElementById("root");
 

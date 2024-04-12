@@ -1,16 +1,33 @@
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/Inter-Variable.ttf");
+  font-display: swap;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-* {
+* :not(head, script) {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+html,
+body,
+#root {
+  height: 100%;
 }
 
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: vars.$color-background;
+  color: vars.$color-text-primary;
+  font-family: "Inter", Calibri;
 }
 
 img,
