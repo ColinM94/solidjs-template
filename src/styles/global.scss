@@ -14,6 +14,9 @@
   margin: 0;
   display: flex;
   flex-direction: column;
+  appearance: none;
+  border: none;
+  position: relative;
 }
 
 html,
@@ -28,6 +31,7 @@ body {
   background-color: vars.$color-background;
   color: vars.$color-text-primary;
   font-family: "Inter", Calibri;
+  font-size: 62.5%;
 }
 
 img,
@@ -44,6 +48,7 @@ button,
 textarea,
 select {
   font: inherit;
+  color: inherit;
 }
 
 p,
@@ -54,6 +59,11 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  color: vars.$color-text-primary;
 }
 
 #root {

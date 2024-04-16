@@ -23,6 +23,7 @@ $color-surface2: #222a35;
 $color-surface3: #28323f;
 
 $color-primary: #005a9c;
+$color-secondary: #104972;
 $color-outline: #2b3542;
 $color-text-primary: rgb(255 255 255 / 90%);
 $color-text-secondary: rgb(255 255 255 / 70%);
@@ -36,11 +37,11 @@ $color-white: #ffffff;
 $color-link: #9393ff;
 
 // Layout
-$roundness: 6px;
-$spacing-primary: 0.75rem;
-$spacing-secondary: 0.5rem;
-$spacing-tertiary: 0.25rem;
-$layout-header-height: $spacing-primary * 4.5;
+$roundness: 8px;
+$spacing-primary: 1.75rem;
+$spacing-secondary: 1.5rem;
+$spacing-tertiary: 1.25rem;
+$layout-header-height: $spacing-primary * 2;
 $layout-tabbar-height: $spacing-primary * 2.25;
 $layout-navbar-width: 250px;
 

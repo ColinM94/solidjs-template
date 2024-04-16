@@ -1,0 +1,100 @@
+.container {
+  flex: 1;
+  overflow: hidden;
+
+  .header {
+    flex-direction: row;
+    // background-color: vars.$color-surface2;
+    width: 100%;
+    height: vars.$layout-header-height;
+    align-items: center;
+    padding-left: vars.$spacing-primary;
+    padding-right: vars.$spacing-primary;
+
+    .backButton {
+      font-size: vars.$font-size-display;
+      margin-right: auto;
+    }
+  }
+
+  .content {
+    flex: 1;
+    padding: vars.$spacing-primary;
+    padding-bottom: vars.$spacing-primary * 2;
+    gap: vars.$spacing-primary;
+
+    .card {
+      flex: 1;
+      font-size: 4rem;
+      font-weight: 300;
+      perspective: 1000px;
+
+      .cardInner {
+        height: 100%;
+        width: 100%;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+        transition: transform 0.3s;
+      }
+
+      .cardFace {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        backface-visibility: hidden;
+        border-radius: vars.$roundness;
+        background-color: vars.$color-surface;
+      }
+
+      .cardFront {
+        @extend .cardFace;
+      }
+
+      .cardBack {
+        @extend .cardFace;
+        transform: rotateY(180deg);
+      }
+
+      .cardSide {
+        position: absolute;
+        height: 100%;
+        width: 50%;
+      }
+
+      .cardLeft {
+        @extend .cardSide;
+        left: 0;
+      }
+
+      .cardRight {
+        @extend .cardSide;
+        right: 0;
+      }
+    }
+
+    .flipped {
+      transform: rotateY(180deg);
+    }
+
+    .buttons {
+      flex-direction: row;
+      gap: vars.$spacing-primary;
+
+      .button {
+        flex: 1;
+      }
+
+      .wrongButton {
+        @extend .button;
+        background-color: vars.$color-danger;
+      }
+
+      .rightButton {
+        @extend .button;
+        background-color: vars.$color-success;
+      }
+    }
+  }
+}
